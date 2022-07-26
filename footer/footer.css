@@ -68,7 +68,11 @@
     transform: scale(1.1);
 }
 
-hr {
+.blanco{
+    visibility: hidden;
+}
+
+.bandero-blanco {
     margin-top: 30px;
 }
 
@@ -97,22 +101,118 @@ hr {
     font-size: 14px;
 }
 
-@media (max-width:900px) {
+.fleche-img {
+    height: 32px;
+    width: 32px;
+}
+
+.fleche {
+    display: none;
+}
+
+@media (max-width:1000px) {
+    .footer{
+        flex-direction: column;
+        height: 480px;
+    }
+
+    .row{
+        flex-direction: column;
+    }
+    .footer-col {
+        margin-top: 15px;
+        margin-left: 20px;
+        position: relative;
+    }
+    .footer-col ul li a {
+        display: none;
+    }
     .footer-col h4 {
         font-size: 20px;
     }
     .footer-col ul li a {
         font-size: 16px;
+    }
+    .cond p {
+        font-family: 'lato';
+        color: #fff;
+        margin: 15px 50px 25px 50px;
+        font-size: 10px;
+    }
+
+    .copy {
+        font-size: 12px;
+    }
+    .footer-col h4 {
+        font-size: 24px;
+        color: #fff;
+        margin-bottom: 15px;
+        font-weight: bold;
+        font-family: 'lato';
+    }
+    .bandero-blanco {
+        margin-top: 15px;
+    }
+    .blanco {
+        visibility: visible;
+    }
+    .social-links {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    
+    }
+    .h4-social {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .fleche {
+        cursor: pointer;
+    }
+
+    .fleche1 {
+        display: block;
+        position: absolute;
+        top: 0px;
+        right: 15px;
+    }
+    .fleche2 {
+        display: block;
+        position: absolute;
+        top: 0px;
+        right: 15px;
+    }
+    .fleche3 {
+        display: block;
+        position: absolute;
+        top: 0px;
+        right: 15px;
+    }
+    .fleche4 {
+        display: block;
+        position: absolute;
+        top: 0px;
+        right: 15px;
     }
     
 }
-@media (max-width:800px) {
-    .footer-col h4 {
-        font-size: 20px;
-    }
-    .footer-col ul li a {
-        font-size: 16px;
-        display: none;
-    }
 
+@media (max-width:600px) {
+    .cond p {
+        font-family: 'lato';
+        color: #fff;
+        margin: 15px 35px 15px 35px;
+        font-size: 10px;
+    }
 }
+@media (max-width:500px) {
+    
+    .cond p {
+        font-family: 'lato';
+        color: #fff;
+        font-size: 10px;
+    }
+}
+
